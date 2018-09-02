@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Direct Debit Mandate</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+   
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="fadeIn">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+      <div class="container welcome">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>E-Direct Debit Mandate</h1>
+          </div>
+        </div>
+        <img src="https://www.dropbox.com/s/1pyvu90pyn1cby0/ACH-for-beginners1.jpg?dl=0" alt="" id="hero">
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+  <div class="container">
+    <div id="content-1" class="fadeIn">
+      <ul class="lands">
+      </ul>
+    </div>
+    <div id="content-2" class="fadeIn ">
+
+      <div class="first-form mm-5 ">
+        <h3>Enter your Bank Account</h3>
+        <div class="form-group">
+          <input type="text" class="form-control" id="approve-key" placeholder="Account Number">
+        </div>
+        <div class="form-group">
+        </div>
+        <button class="btn btn-primary setBankAccount">
+          Set Bank Account
+        </button>
+      </div>
+
+      <hr>
+
+      <div class="second-form mm-5 ">
+        <h3>Get Your Bank Account Associated with your Public Key</h3>
+        <div class="form-group">
+          <input type="text" class="form-control" id="approve-all-key" placeholder="public key">
+        </div>
+        <button class="btn btn-primary getBankAccount">
+         Get Bank Account
+        </button>
+      </div>
+      <hr>
+      <div class="third-form mm-5">
+       
+      <div class="mm-5">
+        <h3>Calculate the amount of each installment</h3>
+        <div class="form-group">
+          <label for="exist-id">Enter the total price</label>
+          <input type="text" class="form-control" id="exist-id" placeholder="Total Price">
+          <label for="number-id">Enter number of installments</label>
+          <input type="text" class="form-control" id="number-id" placeholder="Number of Installments">
+        </div>
+        <button class="btn btn-primary getInstallments">
+          Calculate Installment
+        </button>
+      </div>
+      <hr>
+
+      
+      </div>
+      <hr>
+    </div>
+
+  </div>
+  <!-- /#wrapper -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
